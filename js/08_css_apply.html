@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       .cssaply{
+        font-size: 50px;
+        background: linear-gradient(red,blue,green);
+        color: aqua;
+        padding: 20px;
+        width: 50%;
+        margin: 0 auto;
+       }
+    </style>
+</head>
+<body>
+    
+    <h1 id="h1">heading1</h1>
+
+    <h2 id="h2">heading2</h2>
+
+    <script>
+        var h1_tag = document.getElementById("h1");
+        console.log(h1_tag)
+        h1_tag.style.color ="red";
+        h1_tag.style.fontSize = "100px";
+        h1_tag.style.background="blue";
+
+        var h2_tag = document.getElementById("h2")
+
+        h2_tag.classList.add("cssaply")
+        // h2_tag.classList.remove("cssaply")
+
+    </script>
+</body>
+</html>

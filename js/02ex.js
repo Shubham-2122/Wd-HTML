@@ -1,0 +1,5 @@
+// window.alert("this is alert")
+// window.confirm("are you sure")
+// window.prompt("5 +5 ? ")
+// window.print()
+document.write("yhikhh")

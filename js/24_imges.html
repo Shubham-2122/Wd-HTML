@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="main">
+        <img src="/imges/1.jfif" alt="" height="250px" width="100%" id="img">
+        <button onclick="clickn()">click</button>
+    </div>
+
+    <script>
+        var im1 = document.getElementById("img")
+        // console.log(im1.src)
+
+        function clickn()
+        {
+            if(im1.src.match("/imges/1.jfif"))
+            {
+                im1.src = "/imges/2.jfif"
+            }
+            else if(im1.src.match("/imges/2.jfif"))
+            {
+                im1.src = "/imges/3.jfif"
+            }
+            else
+            {
+                im1.src = "/imges/1.jfif"
+            }
+        }
+    </script>
+</body>
+</html>
